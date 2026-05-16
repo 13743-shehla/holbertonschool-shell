@@ -1,2 +1,3 @@
 #!/bin/bash
-dc -e "8 o 5 i $(echo "$WATER" | tr 'water' '01234') $(echo "$STIR" | tr 'stir.' '01234') + p" | tr '01234567' 'bestchol'
+
+echo "ibase=water; obase=bestchol; $WATER + $STIR" | bc
