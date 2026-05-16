@@ -1,2 +1,2 @@
 #!/bin/bash
-while read -r line; do echo "$line"; read -r _; done
+grep -n '^' | grep -v '^[0-9]*[02468]:' | cut -d: -f2-
