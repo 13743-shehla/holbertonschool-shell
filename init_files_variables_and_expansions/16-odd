@@ -1,2 +1,2 @@
 #!/bin/bash
-eval $'while read -r line\ndo\necho "$line"\nread -r _\ndone'
+eval $'while read -r line\ndo\necho "$line"\nread -r _\ndone\nexit 0'
