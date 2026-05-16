@@ -1,2 +1,2 @@
 #!/bin/bash
-while read l; do echo "$l"; read; done
+sed -n '1~2p'
