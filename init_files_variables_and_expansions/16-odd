@@ -1,2 +1,2 @@
 #!/bin/bash
-pr -e2 -t | cut -f1
+eval $'while read -r line\ndo\necho "$line"\nread -r _\ndone'
